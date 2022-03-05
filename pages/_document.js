@@ -11,8 +11,8 @@ export default class MyDocument extends Document {
           <link rel="stylesheet" href="/fonts/Inter/Inter.css" />
           <link rel="stylesheet" href="/fonts/Druk/Druk.css" />
           {/* Global Site Tag (gtag.js) - Google Analytics */}
-          <script async src={`https://www.googletagmanager.com/gtag/js?id=${process.env.GTAG}`}></script>
-          <script>
+          <script async src={`https://www.googletagmanager.com/gtag/js?id=${process.env.GTAG}`}/>
+          <script
             dangerouslySetInnerHTML={{
               __html: `
             window.dataLayer = window.dataLayer || [];
@@ -23,7 +23,7 @@ export default class MyDocument extends Document {
             });
           `,
             }}
-          </script>
+          />
         </Head>
         <body>
           <Main />
