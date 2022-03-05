@@ -10,6 +10,20 @@ export default class MyDocument extends Document {
         <Head>
           <link rel="stylesheet" href="/fonts/Inter/Inter.css" />
           <link rel="stylesheet" href="/fonts/Druk/Druk.css" />
+          {/* Global Site Tag (gtag.js) - Google Analytics */}
+          <script async src={`https://www.googletagmanager.com/gtag/js?id=${process.env.GTAG}`}></script>
+          <script>
+            dangerouslySetInnerHTML={{
+              __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', '${process.env.GTAG}', {
+              page_path: window.location.pathname,
+            });
+          `,
+            }}
+          </script>
         </Head>
         <body>
           <Main />
