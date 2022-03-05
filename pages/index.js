@@ -125,6 +125,7 @@ function Home({ changeTheme, theme }) {
     <div className={styles.container}>
       <Head>
         <title>ChainDirectory</title>
+        <meta name="description" content="ChainDirectory is a list of EVM networks, continuing the Chainlist project after their shutdown. Users can use the information to connect their wallets (such as Metamask) and Web3 middleware providers to the appropriate Chain ID and Network ID to connect to the correct chain."/>
         <link rel="icon" href="/favicon.png" />
       </Head>
 
