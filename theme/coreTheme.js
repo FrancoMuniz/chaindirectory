@@ -40,6 +40,9 @@ const coreTheme = {
         'Inter',
       ],
       fontSize: '60px',
+      ['@media (max-width:1500px)']: { // eslint-disable-line no-useless-computed-key
+        fontSize: '52px'
+      },
       ['@media (max-width:576px)']: { // eslint-disable-line no-useless-computed-key
         fontSize: '42px'
       },

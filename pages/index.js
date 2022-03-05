@@ -153,12 +153,19 @@ function Home({ changeTheme, theme }) {
                   </svg>
                   <Typography variant='body1' className={classes.sourceCode}>View Source Code</Typography>
                 </a>
-                <Typography variant='subtitle1' className={classes.version}>Version 1.0.7</Typography>
                 <Typography variant='subtitle1' className={classes.originalProject}>
                   <a className={`${classes.socialButton}`} href='https://github.com/antonnell/networklist-org.git' target='_blank' rel="noopener noreferrer" >
                     Original project by Chainlist
                   </a>
                 </Typography>
+              </div>
+              <div className={classes.socials}>
+                <a className={`${classes.socialButton}`} href='https://twitter.com/chain_directory' target='_blank' rel="noopener noreferrer" >
+                  <svg version="1.1" width="20" height="20" viewBox="0 0 24 24">
+                    <path fill="#00ACEE" d="M.5 18.7c10 6.2 22.7-.7 22.5-13 1-.7 1.9-1.6 2.6-2.7-1 .5-2 .8-3.1.9 1.14-.7 2-1.7 2.4-2.9-1 .6-2 1-3.3 1.3-4.3-4.13-10 .3-8.8 4.7-4.3-.2-8-2.3-10.6-5.4C1 4 1.5 7.1 3.9 8.5 3 8.4 2 8.2 1.5 7.8c0 2.6 1.8 4.6 4.1 5.1-.8.2-1.5.3-2.3.1.6 2 2.6 3.6 4.8 3.6-2 1.6-4.7 2.4-7.6 2.1z" />
+                  </svg>
+                  <Typography variant='body1' className={classes.sourceCode}>Follow us on Twitter</Typography>
+                </a>
               </div>
             </div>
           </div>

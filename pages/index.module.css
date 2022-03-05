@@ -90,7 +90,6 @@
 
 .helpingParagraph {
   margin-bottom: 30px !important;
-  max-width: 320px;
 }
 
 .addNetworkButton {
@@ -129,7 +128,7 @@
 
 .originalProject {
   padding-left: 30px;
-  padding-top: 10px;
+  padding-top:5px;
 }
 
 .searchPaper {
@@ -179,6 +178,9 @@
 }
 
 @media screen and (max-width: 1200px) {
+  .copyContainer {
+    text-align: center;
+  }
   .container {
     display: flex;
     flex-direction: column;
@@ -193,6 +195,7 @@
     position: relative;
     top: 0px;
     min-height: 100vh;
+    margin-bottom: 30px;
   }
 
   .copyCentered {
@@ -214,6 +217,10 @@
     position: relative;
     margin-top: calc(2em + 10px);
     bottom: 0px;
+  }
+  .socialButton {
+    text-align: center;
+    justify-content: center;
   }
 }
 
